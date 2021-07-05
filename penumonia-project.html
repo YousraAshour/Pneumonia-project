@@ -1,0 +1,70 @@
+
+<h1><strong>Overview</strong></h1>
+
+<p>This project helps to identify pneumonia cases in children, you'll need to categorize some chest X-ray images to determine whether the person has <strong>pneumonia</strong> or a <strong>normal lung</strong>. Kindly use the tips given below and pay careful attention to each tip.</p>
+
+<p><strong>Pneumonia</strong> is an infection that inflames the lungs' air sacs (alveoli), in severe cases, it can lead to death.</p>
+<hr>
+
+<h1><strong>Steps</strong></h1>
+
+<ol>
+	<li>Examine the image <strong>thoroughly</strong>.</li>
+	<li>Observe the signs shown in each image carefully, then choose the case accordingly; having <strong>pneumonia</strong>or a <strong>normal</strong>lung.</li>
+	<li>Then choose your <strong>confidence level</strong> according to your choice and observation.</li>
+	<li>In case of uncertainty choose <strong>unknown</strong>.</li>
+</ol>
+<hr>
+
+<h1><strong>Rules Tips</strong></h1>
+
+<p>In the case of <strong>pneumonia</strong>, the image may include a few things :</p>
+
+<ul>
+	<li>Areas of <strong>cloudiness/opacity</strong> in several concentrated areas or one large area.</li>
+	<li>You may also see a general pattern of opacity that obscures the structure of the lungs, heart, and diaphragm.</li>
+</ul>
+
+<p>In the case of a <strong>normal lung</strong>, the image may include a few things :</p>
+
+<ul>
+	<li><strong>Clear lungs</strong> without any areas of abnormal cloudiness/opacity</li>
+	<li>There may be structured, web-like vasculature in the lungs but otherwise that area should be clear.</li>
+	<li>In healthy images, you are also more likely to see a diaphragm shadow.</li>
+</ul>
+
+<p><img class="fr-dib" src="https://video.udacity-data.com/topher/2019/April/5cae622b_annotated-chest-xray/annotated-chest-xray.png" style="width:398px;"></p>
+
+<p><strong>Tips</strong>:</p>
+
+<ul>
+	<li>If the confidence level of your answer is below 50%, then choose <strong>unknown</strong>. This is the case where you can't define whether it's a pneumonia case or a normal lung.</li>
+	<li>You might choose the <strong>unknown</strong>option also if the image is severely cropped, damaged, or taken with a lateral projection where both sides of the lung are not equally visible.</li>
+</ul>
+<hr>
+
+<h1>Examples</h1>
+
+<table style="width:100%;">
+	<tbody>
+		<tr>
+			<td style="width:50.0000%;"><img class="fr-dib" src="https://video.udacity-data.com/topher/2019/April/5cae62e6_healthy-example/healthy-example.png" style="width:398px;"></td>
+			<td style="width:50.0000%;text-align:center;padding-inline:20px 20px;">This is a <strong>normal lung</strong>, clear lung area visible around the ribs and heart</td>
+		</tr>
+		<tr>
+			<td>
+				<br><img class="fr-dib" src="https://live.staticflickr.com/65535/51265009759_66c62d3167_b.jpg" style="width:426px;vertical-align:middle;text-align:center;"></td>
+			<td style="text-align:center;padding-inline:20px 20px;">This is a <strong>pneumonia case</strong>, you'll see a distinct, cloudy area that obscures the lungs</td>
+		</tr>
+		<tr>
+			<td>
+				<br><img class="fr-dib" src="https://live.staticflickr.com/65535/51265308670_e849e5a2ba_m.jpg" style="width:399px;vertical-align:middle;text-align:center;"></td>
+			<td style="text-align:center;padding-inline:20px 20px;">This is a <strong>pneumonia case</strong>, you'll observe several, small cloudy areas and little (if any), diaphragm shadow</td>
+		</tr>
+		<tr>
+			<td>
+				<br><img class="fr-dib" src="https://undergradimaging.pressbooks.com/app/uploads/sites/66470/2017/10/chest-case-10-3.jpg" style="width:399px;vertical-align:middle;text-align:center;"></td>
+			<td style="text-align:center;padding-inline:20px 20px;">This image can be labeled as <strong>unknown&nbsp;</strong>because the x-ray is taken from a lateral projection where the lungs are not equally shown and hence a decision whether it's pneumonia or not can't be decided upon it.</td>
+		</tr>
+	</tbody>
+</table>
